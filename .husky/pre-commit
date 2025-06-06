@@ -1,5 +1,7 @@
-echo "The husky is running..."
+echo '[Husky] 🏗️👷 Styling your project before committing👷‍♂️🏗️'
+echo '[Husky] please be patient, this may take a while...'
 
-npm run test
+# run check-types & lint-staged
+yarn check-types && yarn lint-staged
 
-npx lint-staged
+echo '🎉 No error found: committing this now.... ✨🚀🏄‍♂️🍻'
