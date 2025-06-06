@@ -1,1 +1,3 @@
-Hello this is a test
+echo "The husky is running..."
+
+npm run test
