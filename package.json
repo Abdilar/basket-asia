@@ -27,7 +27,8 @@
     "lint": "yarn check-types && yarn lint:scripts && yarn lint:styles && yarn lint:json",
     "lint:scripts": "eslint '**/*.{js,jsx,ts,tsx}'",
     "lint:styles": "stylelint '**/*.{css,scss}'",
-    "lint:json": "prettier --check '**/*.json'"
+    "lint:json": "prettier --check '**/*.json'",
+    "preinstall": "node tools/preinstall.js"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +47,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">=1.22.22",
+    "node": ">=22.14.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.33.1",
