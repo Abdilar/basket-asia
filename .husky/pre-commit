@@ -1,3 +1,5 @@
 echo "The husky is running..."
 
 npm run test
+
+npx lint-staged

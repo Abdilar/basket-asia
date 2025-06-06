@@ -21,7 +21,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "check-types": "tsc --noEmit --incremental false",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,md,json}\"",
+    "lint": "yarn check-types && yarn lint:scripts && yarn lint:styles && yarn lint:json",
+    "lint:scripts": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "lint:styles": "stylelint '**/*.{css,scss}'",
+    "lint:json": "prettier --check '**/*.json'"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +48,15 @@
     ]
   },
   "devDependencies": {
-    "husky": "^9.1.7"
+    "@typescript-eslint/eslint-plugin": "^8.33.1",
+    "@typescript-eslint/parser": "^8.33.1",
+    "eslint": "8",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3"
   }
 }

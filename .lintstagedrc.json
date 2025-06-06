@@ -1,0 +1,5 @@
+{
+  "*.{md,json}": "prettier --write",
+  "!(.vscode)**/*.{js,jsx,ts,tsx}": ["prettier --write", "eslint --color"],
+  "!(.vscode)**/*.{css,scss}": ["prettier --write", "stylelint --color"]
+}
