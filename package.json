@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.6",
     "clsx": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^7.6.2",
     "react-scripts": "5.0.1",
     "sass": "^1.89.1",
     "typescript": "^5.8.3",
@@ -19,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false",
+    "test": "jest --config jest.config.ts --watchAll=false",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "check-types": "tsc --noEmit --incremental false",
@@ -57,6 +58,8 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
+    "@testing-library/dom": "^10.4.0",
+    "@types/jest": "^29.5.14",
     "@typescript-eslint/eslint-plugin": "^8.33.1",
     "@typescript-eslint/parser": "^8.33.1",
     "commitizen": "^4.3.1",
@@ -67,7 +70,11 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^30.0.0-beta.3",
     "lint-staged": "^16.1.0",
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.4",
+    "ts-node": "^10.9.2"
   }
 }
