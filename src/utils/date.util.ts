@@ -4,7 +4,7 @@
  * @returns - A string as a format "yyyy-MM-dd"
  */
 export const toStringDate = (date: Date) => {
-  return date.toISOString().split('T')[0];
+  return date.toISOString().split('T')[0]
 }
 
 /**

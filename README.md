@@ -1,9 +1,10 @@
-# CRUD Code Test 
+# CRUD Code Test
 
 Please read each note very carefully!
 Feel free to add/change the project structure to a clean architecture to your view.
 
 Create a simple CRUD application with React that implements the below model:
+
 ```
 Customer {
 	Firstname
@@ -14,6 +15,7 @@ Customer {
 	BankAccountNumber
 }
 ```
+
 ## Practices and patterns (Must):
 
 - [TDD](https://testdriven.io/blog/tdd-with-react-jest-and-enzyme-part-one/) [Wiki](https://en.wikipedia.org/wiki/Test-driven_development)
@@ -24,7 +26,7 @@ Customer {
 
 ### Validations (Must)
 
-- During Create; validate the phone number to be a valid *mobile* number only (You can use [Google LibPhoneNumber](https://github.com/google/libphonenumber) to validate mobile number).
+- During Create; validate the phone number to be a valid _mobile_ number only (You can use [Google LibPhoneNumber](https://github.com/google/libphonenumber) to validate mobile number).
 
 - A Valid email and a valid account number must be checked before submitting the form.
 
@@ -35,5 +37,5 @@ Customer {
 - Email must be unique in the local storage or memory array
 
 ### Delivery (Must)
-- Please clone this repository in a new GitHub repository in private mode and share with ID: `mason-chase` in private mode on github.com, make sure you do not erase my commits and then create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (code review).
 
+- Please clone this repository in a new GitHub repository in private mode and share with ID: `mason-chase` in private mode on github.com, make sure you do not erase my commits and then create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (code review).
